@@ -1,5 +1,15 @@
+const Bag = require("./Bag")
+
 class Person {
-    // Include a Constructor Method for Properties: 
+    // Include a Constructor Method for Properties:
+    constructor(name,bags) {
+        this.name = name
+        this.bags = []
+    }
+ addBag=(bag)=>{
+    this.bags.push(bag)
+ }
+
         // 1. Name
         // 2. Bags
             // 2a. Bags should contain/reference a data type for storing more than one bag object.
@@ -8,3 +18,4 @@ class Person {
 }
 
 //Export the Module
+module.exports = Person
